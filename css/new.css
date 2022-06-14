@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+nav{
+    display: flex;
+    background-color: rgba(152, 54, 221, 0.37);
+    justify-content: space-around;
+    padding: 20px 0px;
+    color: rgba(39, 2, 65, 0.678);
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-evenly;
+}
+nav ul li a{
+    color: rgb(43, 3, 71);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+nav ul li a:hover{
+    color: rgba(171, 81, 235, 0.678);
+}
+nav .logo{
+    font-family: 'Pacifico', cursive;
+}
+
+
+/* hamburger menu */
+.menu {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu input{
+    position: absolute;
+    width: 70px;
+    height: 28px;
+    opacity: 0;
+    left: -20px;
+    top: -1px;
+    cursor: pointer;
+    z-index: 2;
+}
+.menu span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: rgba(171, 81, 235, 0.678);
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+/* hamburger menu animation */
+.menu span:nth-child(2) {
+    transform-origin: 0 0;
+}
+.menu span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.menu input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+.menu input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg) translate(-1px, 0px);
+}
+.menu input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+/* responsif breakpoint */
+
+/* ukuran tablet */
+@media screen and (max-width: 768px){
+    nav ul {
+        width: 50%;
+    }
+}
+
+/* ukuran mobile */
+@media screen and (max-width: 576px){
+    .menu {
+        display: flex;
+    }
+    nav ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 85vh;
+        margin-top: 78px;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(152, 54, 221, 0.37);
+        transform: translateX(100%);
+        transition: all 1s;
+    }
+    .slide {
+        transform: translateX(0%);
+    }
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+}
+p {
+    font-size: 15px;
+    text-align-last: center;
+}
+div {
+    padding: 10px 8px 0px 10px;
+}
+footer{
+    padding: 40px;
+}
+
