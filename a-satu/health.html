@@ -1,0 +1,152 @@
+<DOCTYPE! html>
+<html lang="id">
+<head>
+  <title>health</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Meddon&display=swap" rel="stylesheet">
+  <style>
+    /* ukuran tablet */
+@media screen and (max-width: 768px){
+  nav ul {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .container{
+    width: 700px;
+  }
+  .n-slide{
+    width: 700px;
+    margin: 5px 0px 0px 30px;
+  }
+  .sliders img{
+    width: 650px;
+    height: 380px;
+    padding: 10px 15px 5px 15px;
+  }
+  .navigation-manual{
+      position: absolute;
+      width: 500px;
+      display: flex;
+      margin-left: 300px;
+      margin-top: -40px;   
+  }
+  #radio4:checked ~ .first{
+    margin-left: -290%;
+}
+}
+ /* ukuran mobile */
+@media screen and (max-width: 576px){
+  .container{
+    width: 550px;
+  }
+  .n-slide{
+    width: 530px;
+    margin: 5px 0px 0px 25px;
+  }
+  .sliders img{
+    width: 500px;
+    height: 380px;
+    padding: 10px 15px 5px 15px;
+  }
+  .navigation-manual{
+      position: absolute;
+      width: 500px;
+      display: flex;
+      margin-left: 230px;
+      margin-top: -40px;   
+  }
+  #radio4:checked ~ .first{
+    margin-left: -298%;
+}
+}
+  </style>
+</head>
+<body>
+ <header>
+  <div>
+    <h1>Blog Pribadi</h1>
+  </div>
+ </header>
+  <nav>
+   <ul>
+    <li><a href="beranda.html">Beranda</a></li>
+    <li><a href="lifestyle.html">Lifestyle</a></li>
+    <li><a href="health.html">Health</a></li>
+    <li><a href="about.html">About</a> </li>
+  </ul>
+  <div class="menu">
+    <input type="checkbox">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  </nav>
+  <div class="container">
+   <div >
+     <div class="logo">
+      <h2>Health</h2>
+       <img src="pict/simbol.png" width="20">
+     </div>
+       <p>Pola makan yeng baik untuk kesehatan.</p>
+   </div>
+   <div>
+    <img src="pict/pm.jpg">
+   </div>
+   <div>
+      <p>Dalam menjaga kesehatan tentu yang perlu diperhatikan adalah makanan dan pola makan sehari-hari. Sebenarnya, tidak ada ketentuan jam makan yang pasti. Masing-masing individu mempunyai kebiasaan dan pola makan tersendiri. Meski begitu, alangkah baiknya jika anda dapat membuat aturan waktu makan yang baik untuk diri sendiri. Selain jadwal, anda perlu mengusahakan agar jam makan yang anda buat itu sama setiap harinya. Sebab, hal ini membuat tubuh anda mengerti dan tahu kapan jadwal ia mendapatkan makanan. Dengan begitu, proses metabolisme tubuh akan meningkat. Berikut beberapa tips mengatur pola makan yang baik:</p>
+      <p>Sarapan sebelum jam sembilan, tubuh membutuhkan makanan setelah hampir tujuh jam kosong selama anda tidur malam, sehingga anda harus cepat-cepat mengisinya agar anda mengembalikan energi untuk beraktivitas. Maka itu, sarapan pada pagi hari merupakan hal penting. Kadar gula dalam darah akan turun sekitar satu sampai dua jam setelah Anda bangun tidur. Jadi, sarapan sebelum pukul 9 pagi merupakan waktu yang ideal untuk memberikan otak dan tubuh anda makanan.</p>
+      <p>Makan siang pada waktu istirahat, sebagian besar orang makan siang saat waktu istirahat tiba, yaitu sekitar pukul 12 siang. Sebenarnya, tidak ada masalah dengan waktu makan siang yang ideal ini. Apabila anda sudah makan camilan sebelumnya, hal itu akan mencegah Anda untuk tidak makan terlalu banyak pada siang hari. Makan yang terlalu banyak pada siang hari akan membuat anda cepat mengantuk.</p>
+      <p>Sebaiknya, makan malam sebelum pukul 8 malam. Sebab, anda harus memberikan waktu untuk tubuh mencerna makanan yang masuk sebelum anda pergi tidur. Tidur dalam keadaan perut penuh tentu tidak baik untuk kesehatan. Jadi, biasakanlah untuk tidak makan makanan yang berat setelah pukul 8 malam. Apabila merasa lapar, anda masih bisa mengemil camilan sehat yang tidak mengandung banyak kalori, lemak, dan gula.</p>
+   </div>
+  </div>
+  <div class="n-slide">
+    <div class="slider">
+      <input type="radio" name="radio-button" id="radio1">
+      <input type="radio" name="radio-button" id="radio2">
+      <input type="radio" name="radio-button" id="radio3">
+      <input type="radio" name="radio-button" id="radio4">
+      <input type="radio" name="radio-button" id="radio5">
+   
+    <div class="sliders first">
+      <img src="pict/pokok.jpg" alt="">
+    </div>
+    <div class="sliders">
+      <img src="pict/lauk.jpg" alt="">
+    </div>
+    <div class="sliders">
+      <img src="pict/sayur.jpg" alt="">
+    </div>
+    <div class="sliders">
+      <img src="pict/buah.jpg" alt="">
+    </div>
+    <div class="sliders">
+      <img src="pict/susu.jpeg" alt="">
+    </div>
+    </div>
+  </div>
+    <div class="navigation-auto">
+      <div class="auto-btn1"></div>
+      <div class="auto-btn2"></div>
+      <div class="auto-btn3"></div>
+      <div class="auto-btn4"></div>
+      <div class="auto-btn5"></div>
+    </div>
+    <div class="navigation-manual">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+      <label for="radio5" class="manual-btn"></label>
+    </div>
+  </div>
+  <div class="container">
+    <p>Makanan 4 sehat 5 sempurna adalah makanan yang memiliki kandungan gizi lengkap mulai dari karbohidrat, protein, vitamin, lemak, dan mineral.  Makanan 4 sehat terdiri atas makanan pokok, lauk pauk, sayur, dan buah. Sedangkan 5 sempurna merupakan susu yang merupakan nutrisi tambahan.  Awalnya makanan 4 sehat dan 5 sempurna ini merupakan kampanye yang digalakkan pemerintah namun saat ini sudah menjadi gaya hidup sebagian orang.  Kesadaran akan konsumsi makanan yang sehat harus juga didampingi dengan gaya hidup sehat lainnya seperti istirahat cukup, olahraga rutin, dan gaya hidup bersih dan sehat. Dengan melakukan hal-hal tersebut, tubuh akan selalu fit dan terhindar dari berbagai macam penyakit.</p>
+  </div>
+  <footer>
+    <p>Author: Triska Amalia Rahmawati<br></p>
+    <p> &copy; 2022 <a href="triskaamalia97@gmail.com">triskaamalia97@gmail.com</a></p>
+  </footer> 
+  <script src="js/new.js"></script>
+</body>
+</html>

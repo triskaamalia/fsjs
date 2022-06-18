@@ -109,6 +109,9 @@ nav .logo{
     .slide {
         transform: translateX(0%);
     }
+    .container{
+        width: 100px;
+    }
 }
 
 a{
