@@ -50,6 +50,60 @@ function segitiga(panjang: number) {
 }
 console.log(segitiga(10));
 
+let angkaGanjil = () => {
+  for(let i = 1; i <=10; i++){
+      if(i % 2 == 1){
+          console.log (i);
+      }
+  }
+}
+
+console.log(angkaGanjil());
+
+let angkaGenap = (range: number): any => {
+  for(let i = 1; i <= range; i++){
+      if(i % 2 == 0){
+          console.log(i);
+      }
+  }
+}
+console.log(angkaGenap(10));
+
+for (let i = 1; i <= 10; i++) {
+  let flag = 0;
+  for (let j = 2; j < i; j++) {
+      if (i % j == 0) {
+          flag = 1;
+          break;
+      }
+  }
+  if (i > 1 && flag == 0) {
+      console.log(i);
+  }
+}
+
+let n1 = 0;
+let n2 = 1;
+const fibonacciGenerator = (maxnum: number): any => {
+  for (let i = 1; i <= maxnum; i++) {
+    console.log(n1);
+    let next_num = n1 + n2;
+    n1 = n2;
+  }
+
+  const generatePrime = (maxnum: number): any => {
+    for (let limit = 1; limit <= maxnum; limit++) {
+      let a = false;
+      for (let i = 2; i <= limit; i++) {
+        if (limit % i === 0 && i !== limit) {
+          a = true;
+        }
+      }
+      if (a === false) {
+        console.log(limit)
+      }
+    }
+  }
 
 async function myDisplay() {
   let myPromise = new Promise(function(resolve) {
@@ -58,4 +112,4 @@ async function myDisplay() {
     console.log (await myPromise);
 }
 
-myDisplay();
+myDisplay();}

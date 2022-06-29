@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>coba jquery</title>
+</head>
+<body>
+  <h1>jQuery</h1>
+  <body><h1>Cara Membuat Calculator Sederhana Menggunakan Jquery</h1>
+    <div class="container">
+   
+      <div class="muka">
+      
+      <input class="bilangan1" type="text"></input>
+      <select class="operator">
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="+">+</option>
+      </select>
+      <input class="bilangan2" type="text"></input>
+      <br>
+      <button id="hitung">Hitung</button>
+   
+      </div>
+      <div class="demo"></div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#hitung").click(function(e){
+          e.preventDefault()
+          var bilangan1 = parseInt($(".bilangan1").val()); 
+          var bilangan2 = parseInt($(".bilangan2").val()); 
+          // console.log(bilangan1);
+          // console.log(bilangan2);
+          function cek (){
+            operator = $(".operator").val();
+            if(operator === "*"){
+              var hasil = (bilangan1 * bilangan2);	
+            }else if(operator === "/"){
+              var hasil = (bilangan1 / bilangan2);	
+            }else if(operator === "+"){
+              var hasil = (bilangan1 + bilangan2);	
+            }else if(operator === "-"){
+              var hasil = (bilangan1 - bilangan2);	
+            }					
+            return hasil;
+          }
+          console.log(cek())
+          var output = $(".demo");
+          output.html(` Hasil dari operator <strong> ( ${operator} ) </strong> adalah = <strong>  ${cek()}   </strong>`)
+   
+        })
+      })
+    </script>
+  </body>
+  </html>
