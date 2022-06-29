@@ -1,5 +1,5 @@
 $primary-color: rgb(77, 211, 193);
-$font-stack: sans-serif;
+$font-stack: 'Open Sans', sans-serif;
 $second-color: rgb(127, 255, 212);
 
 @mixin important-text {
@@ -15,33 +15,125 @@ body{
     margin: 0px;
     overflow: hidden;
 }
-nav{
+.menu{
+  .vgb{
+    padding: 10px 0px 0px 150px;
+  }
+  #satu
+  {
+    img{
+      width: 40px;
+    } 
+      left: 0px;
+      padding-top: 5px;
+      z-index: 1;
+  }
+  #dua
+  {   img{
+    width: 25px;
+  } 
+      position: absolute;
+      left: 158px;
+      top: 15px;
+      z-index: 2;
+  }
   width: 100%;
-  height: 60px;
-  background-color: $primary-color;
+  height: 70px;
+  color: #000;
   display: flex;
-  padding: 0px 10px;
-  color: #fff;
+  background-color: #fff;
 }
-  .navbar{
-    width: 300px;
-    height: 60px;
-    margin: 0px 10px;
+.logo{
+  background-image: url('../pict/bioven.png');
+  background-repeat: no-repeat;
+  width: 110px;
+  height: 30px;
+  left: 200px;
+  top: 25px;
+  position: absolute;
+}
+#property{
+  position: absolute;
+  width: 30px;
+  left: 560px;
+  top: 18px;
+}
+#prop{
+  position: absolute;
+  width: 30px;
+  left: 780px;
+  top: 18px;
+}
+#line{
+  position: absolute;
+  width: 1px;
+  left: 750px;
+  top: 15px;
+}
+.one{
+  position: absolute;
+  width: 300px;
+  left: 600px;
+  top: 8px;
+  line-height: 6px;
+}
+.two{
+  position: absolute;
+  width: 300px;
+  left: 820px;
+  top: 8px;
+  line-height: 6px;
+}
+.up{
+  font-size: 10px;
+}
+.down{
+  font-size: 15px;
+}
+.bt{
+  position: absolute;
+  width: 150px;
+  height: 45px;
+  left: 980px;
+  top: 13px;
+  font-size: 11px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  background-color: #FE8C12;
+}
+.top-header{
+  position: absolute;
+  width: 980px;
+  height: 50px;
+  left: 150px;
+  background-color: #000;
+  .isi{
+    ul{
     display: flex;
-     a {
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
+    width: 400px;
+    justify-content: space-around;
+    padding-left: 20px;
+    
+    li
+    { list-style: none;
+      a{
       text-decoration: none;
       color: #fff;
-      width: 60px;
-      height: 60px;
-        &:hover {  
-          background-color: $second-color;
-          }
-        }
-      }
-
+      font-size: 14px;
+    }
+  }
+  }
+    #home{
+      color: #FE8C12;
+    }
+  }
+}
+.banner{
+  width: 100%;
+  height: 500px;
+  background-color: $second-color;
+}
 .container-basic{
   @include important-text;
   ul{

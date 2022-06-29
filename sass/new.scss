@@ -1,0 +1,62 @@
+$primary-color: rgb(77, 211, 193);
+$font-stack: sans-serif;
+$second-color: rgb(127, 255, 212);
+
+@mixin important-text {
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid blue;
+}
+
+body{
+    color: $primary-color;
+    font: 100% $font-stack;
+    margin: 0px;
+    overflow: hidden;
+}
+nav{
+  width: 100%;
+  height: 60px;
+  background-color: $primary-color;
+  display: flex;
+  padding: 0px 10px;
+  color: #fff;
+}
+  .navbar{
+    width: 300px;
+    height: 60px;
+    margin: 0px 10px;
+    display: flex;
+     a {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      text-decoration: none;
+      color: #fff;
+      width: 60px;
+      height: 60px;
+        &:hover {  
+          background-color: $second-color;
+          }
+        }
+      }
+
+.container-basic{
+  @include important-text;
+  ul{
+    list-style: none;
+  }
+  width: 900px;
+  background-color: $second-color;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.content{
+  @extend .container-basic;
+  width: 400px;
+  padding-left: 10px ;
+  font-size: 15px;
+  text-align: start;
+}

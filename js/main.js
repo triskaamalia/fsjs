@@ -25,3 +25,5 @@ function myDisplayer(some) {
     function(value) {myDisplayer(value);},
     function(error) {myDisplayer(error);}
   );
+
+ 
